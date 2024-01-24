@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Map</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 40px; margin-bottom: 40px;">
+    <div class="thebox">
+      <div class="divone">
+        <form id="weatherForm">
+          <label for="lat">Latitude:&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" id="lat" name="latitude" required>
+          <br>
+          <label for="lon">Longitude:</label>
+          <input type="text" id="lon" name="longitude" required>
+          <br>  
+          <button type="button" onclick="getWeather()">Get Weather</button>
+        </form>
+    
+        <div id="weatherInfo" "></div>
+      </div>
+    
+      <div id="map"></div>
+    </div>
+  
+  </div>
+
+  <div class="footer">
+    <h3>Zhan Kazikhanov IT-2209</h3>
+    <a href="#" id="maillink"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Mail &nbsp;&nbsp;&nbsp; </a>
+    <a href="https://github.com/don-juann"> &nbsp;&nbsp;&nbsp; Github  </a>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
